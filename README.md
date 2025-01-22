@@ -37,9 +37,12 @@ Git
 To demonstrate how to add Continuous Integration with GitHub Actions, we'll create a simple Node.js application. To do this, we'll follow these steps:
 
 Initialize a Node.js project locally.
+```
 $ mkdir gh-actions-demo
 $ cd gh-actions-demo
+```
 Initialize as a Node.js project and add necessary .dependencies
+```
 $ npm init
 $ npm i express
 $ npm i --save-dev jest supertest
@@ -54,11 +57,12 @@ Add/replace the following snippet in the package.json file.
       "/node_modules/"
     ]
   },
+  ```
 Create a repository on GitHub.
 New GitHub Repository
 
 Link the local project to the GitHub repository
-
+```
 $ echo "# <REPOSITORY_NAME>" >> README.md
 git init
 git add README.md
@@ -66,11 +70,13 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/<USERNAME>/<REPOSITORY_NAME>.git
 git push -u origin main
+```
 Next, we'll be adding the following four files to the project.
 
 src/app.js
 This is the app object. We have separated it to be able to test it properly.
 
+```
 'use strict';
 const express = require('express');
 
@@ -82,20 +88,26 @@ app.get('/hello', (req, res) => {
   });
 });
 
+
 module.exports = { app };
+```
+
 src/index.js
 This is the entry point of the app. The server will be housed here.
 
+```
 const { app } = require('./app');
 
 const PORT = 8080;
 app.listen(PORT, () => {
   console.log(`Running on http://localhost:${PORT}`);
 });
+```
 
 src/index.test.ts
 This file contains a test. The purpose of this test is to make sure that our app works as it should.
 
+```
 const request = require('supertest');
 const { app } = require('./app');
 
@@ -106,6 +118,8 @@ describe('/hello', () => {
     expect(data.body.message).toBe('Hello World!');
   });
 });
+```
+
 .gitignore
 Now we don't want to spend the whole day uploading node_modules to GitHub, do we? I didn't think so.
 
@@ -119,6 +133,8 @@ To set up CI/CD for a Node.js project using GitHub Actions, follow these steps:
 Create a .github/workflows directory in the project's root directory.
 $ mkdir .github/workflows
 Next, create main.yaml, a YAML file in the workflows directory to define the workflow. This workflow will specify the steps for building, testing, and deploying our code changes.
+
+```
 main.yml
 name: Node.js CI
 
@@ -143,6 +159,8 @@ jobs:
 
     - run: npm install
     - run: npm test
+```
+    
 This workflow gets initiated whenever pull requests or commits are made to the main branch. It could also be modified to include more branches, or if the workflows for other branches are different, then we can create separate YAML files.
 
 Push changes to GitHub to trigger the workflow. If all goes well, the workflow should run successfully. A green checkmark should appear beside the commit message on GitHub as shown below:
