@@ -151,10 +151,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js 14
+    - name: Use Node.js 20
       uses: actions/setup-node@v3
       with:
-        node-version: 14
+        node-version: 20
         cache: 'npm'
 
     - run: npm install
@@ -174,7 +174,7 @@ If done properly, this adds a little badge to our README.md, like the one below:
 | WorkFlow Name | Status |
 |---------------|--------|
 | Main Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
-| Create Workflow | ![Create Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/1.1-CreateWorkflow.yaml/badge.svg) |
+| 1.1 Create Workflow | ![Create Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/1.1-CreateWorkflow.yaml/badge.svg) |
 
 <!-- 
 | Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
