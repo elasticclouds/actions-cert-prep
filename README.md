@@ -175,12 +175,14 @@ If done properly, this adds a little badge to our README.md, like the one below:
 |---------------|--------|
 | Main Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
 | Create Workflow | ![Create Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/1.1-CreateWorkflow.yaml/badge.svg) |
-| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
-| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
-| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
-| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
-| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
 
+<!-- 
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+-->
 
 ### Conclusion
 Implementing Continuous Integration for Node.js apps with GitHub Actions can help streamline development workflows, reduce errors, and increase efficiency.
