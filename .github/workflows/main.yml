@@ -1,4 +1,4 @@
-name: Main Workflow - Node.js CI
+name: Main Action Workflow - Node.js CI
 
 on:
   push:
