@@ -171,7 +171,16 @@ The next course of action is to add a workflow status badge to our repository. T
 
 If done properly, this adds a little badge to our README.md, like the one below:
 
-![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg)
+| WorkFlow Name | Status |
+|---------------|--------|
+| Main Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+
 
 ### Conclusion
 Implementing Continuous Integration for Node.js apps with GitHub Actions can help streamline development workflows, reduce errors, and increase efficiency.
