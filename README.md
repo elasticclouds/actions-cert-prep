@@ -187,6 +187,8 @@ If done properly, this adds a little badge to our README.md, like the one below:
 ### Conclusion
 Implementing Continuous Integration for Node.js apps with GitHub Actions can help streamline development workflows, reduce errors, and increase efficiency.
 
+
+
 With the steps outlined in this article, we can easily set up a basic CI pipeline for our Node.js app, automating our testing process and ensuring that our code is always up to par.
 
 By using GitHub Actions, we can focus on writing high-quality code while the platform takes care of the rest. I hope I've been able to convince you to turn a new leaf today! 
