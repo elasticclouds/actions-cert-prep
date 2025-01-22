@@ -190,3 +190,4 @@ Implementing Continuous Integration for Node.js apps with GitHub Actions can hel
 With the steps outlined in this article, we can easily set up a basic CI pipeline for our Node.js app, automating our testing process and ensuring that our code is always up to par.
 
 By using GitHub Actions, we can focus on writing high-quality code while the platform takes care of the rest. I hope I've been able to convince you to turn a new leaf today! 
+
