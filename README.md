@@ -169,12 +169,9 @@ Workflow success
 ### Adding a workflow status badge
 The next course of action is to add a workflow status badge to our repository. This can be done by adding the following link to our README.md:
 
-![Main Workflow](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
-In this case, the URL is:
-
-![Main Workflow](https://github.com/olumidayy/gh-actions-demo/actions/workflows/main.yml/badge.svg)
 If done properly, this adds a little badge to our README.md, like the one below:
-Main Workflow
+
+![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg)
 
 ### Conclusion
 Implementing Continuous Integration for Node.js apps with GitHub Actions can help streamline development workflows, reduce errors, and increase efficiency.
