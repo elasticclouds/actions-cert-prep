@@ -174,7 +174,7 @@ If done properly, this adds a little badge to our README.md, like the one below:
 | WorkFlow Name | Status |
 |---------------|--------|
 | Main Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
-| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
+| Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/1.1-CreateWorkflow.yml/badge.svg) |
 | Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
 | Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
 | Create Workflow | ![Main Workflow](https://github.com/elasticclouds/actions-cert-prep/actions/workflows/main.yml/badge.svg) |
