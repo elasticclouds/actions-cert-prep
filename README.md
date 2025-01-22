@@ -1,19 +1,12 @@
-Implementing Continuous Integration for Node.js Apps with GitHub Actions
-#
-github
-#
-githubactions
-#
-node
-#
-javascript
+# Implementing Continuous Integration for Node.js Apps with GitHub Actions
+
 Have you been building and deploying apps without putting Continuous Integration(CI) in place? Well, this is a sign to turn a new leaf.
 
 As a developer, it is important to make sure that high-quality code is shipped at all times. As a result, CI is a must-have practice. It may drastically shorten the time it takes to deploy new features and updates while also boosting the software's integrity and stability.
 
 In this article, we'll explore how to add Continuous Integration to a Node.js project with GitHub Actions.
 
-What exactly is Continuous Integration?
+### What exactly is Continuous Integration?
 Continuous integration (CI) is the process of automatically building and testing code changes as soon as they are committed to the repository. This helps catch errors and bugs early on in the development process before they can cause bigger issues down the line.
 Gitlab's Article on CI/CD sheds more light on this topic.
 
@@ -22,7 +15,8 @@ The following are some reasons why it's essential to use CI in software applicat
 It provides faster feedback on code changes, allowing for issues to be caught and fixed earlier in the development process.
 It improves the reliability of products by catching errors and bugs before they reach production.
 It improves security by automatically running security tests and scans as part of the development process.
-What is GitHub Actions?
+
+### What is GitHub Actions?
 GitHub Actions provides a platform for automating software workflows, including Continuous Integration. It allows developers to create custom workflows that automate various tasks, including building, testing, and deploying code changes. These workflows are defined in YAML files and can be triggered by events such as code pushes, pull requests, and issue comments.
 
 Some of the key features of GitHub Actions include:
@@ -32,12 +26,14 @@ Support for a wide range of programming languages and frameworks
 Ability to run workflows on different operating systems and virtual environments
 Support for custom actions and third-party integrations
 Detailed logs and reporting to help diagnose issues and track progress
-Prerequisites
+
+### Prerequisites
 To follow through in this article, we need the following installed on our computer:
 
 Node.js SDK
 Git
-Creating our Node.js App
+
+### Creating our Node.js App
 To demonstrate how to add Continuous Integration with GitHub Actions, we'll create a simple Node.js application. To do this, we'll follow these steps:
 
 Initialize a Node.js project locally.
@@ -116,7 +112,7 @@ Now we don't want to spend the whole day uploading node_modules to GitHub, do we
 node_modules
 We can also test that the app works by running npm start and/or npm test.
 
-Setting up GitHub Actions for our Node.js project
+### Setting up GitHub Actions for our Node.js project
 Now that we have our Node.js app, we can add GitHub Actions to our project. We'll create a new YAML file in the .github/workflows directory to define our workflow. Our workflow will consist of two jobs: building and testing our code and deploying our app to a staging environment.
 To set up CI/CD for a Node.js project using GitHub Actions, follow these steps:
 
@@ -152,7 +148,7 @@ This workflow gets initiated whenever pull requests or commits are made to the m
 Push changes to GitHub to trigger the workflow. If all goes well, the workflow should run successfully. A green checkmark should appear beside the commit message on GitHub as shown below:
 Workflow success
 
-Adding a workflow status badge
+### Adding a workflow status badge
 The next course of action is to add a workflow status badge to our repository. This can be done by adding the following link to our README.md:
 
 ![Main Workflow](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
@@ -162,9 +158,9 @@ In this case, the URL is:
 If done properly, this adds a little badge to our README.md, like the one below:
 Main Workflow
 
-Conclusion
+### Conclusion
 Implementing Continuous Integration for Node.js apps with GitHub Actions can help streamline development workflows, reduce errors, and increase efficiency.
 
 With the steps outlined in this article, we can easily set up a basic CI pipeline for our Node.js app, automating our testing process and ensuring that our code is always up to par.
 
-By using GitHub Actions, we can focus on writing high-quality code while the platform takes care of the rest. I hope I've been able to convince you to turn a new leaf today! ;)
+By using GitHub Actions, we can focus on writing high-quality code while the platform takes care of the rest. I hope I've been able to convince you to turn a new leaf today! 
