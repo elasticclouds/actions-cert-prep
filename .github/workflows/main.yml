@@ -23,15 +23,16 @@ jobs:
     name: Node.js ${{ matrix.node-version }} Test
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Check out the source code from the repository.
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'npm' # Use npm caching for faster dependency installs.
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci    # Perform a clean install of Node.js dependencies.
 
       - name: Run tests
-        run: npm test
+        run: npm test    # Run tests using the specified Node.js version.
