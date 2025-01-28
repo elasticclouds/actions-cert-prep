@@ -24,7 +24,10 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Execute the Command
-      run: echo "Hello, GitHub Workflow!" + ${{ github.GITHUB_REPOSITORY }}
+      run: echo "Hello, GitHub Workflow!" 
+
+    - name: Print repository name
+      run: echo "The repository is ${{ github.repository }}"      
     
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
