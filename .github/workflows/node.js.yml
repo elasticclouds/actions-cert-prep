@@ -24,8 +24,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Execute the Command
-      run: echo 'Hello, GitHub Workflow.  We are in ' + ${ github.GITHUB_REPOSITORY }
-
+      run: echo "Hello, GitHub Workflow. We are in ${GITHUB_REPOSITORY} : ${GITHUB_REPOSITORY}"
     
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
